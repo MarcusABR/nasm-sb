@@ -8,7 +8,7 @@ SRC=./src
 
 make:
 	mkdir -p $(BUILD)
-	$(NASM) -f elf $(SRC)/$(TARGET).asm -o $(BUILD)/$(TARGET).o && gcc -m32 -o $(RUN) $(BUILD)/$(TARGET).o
+	$(NASM) -f elf64 $(SRC)/$(TARGET).asm -o $(BUILD)/$(TARGET).o && ld -m elf_x86_64 -o $(RUN) $(BUILD)/$(TARGET).o
 
 debug:
 	mkdir -p $(BUILD)
