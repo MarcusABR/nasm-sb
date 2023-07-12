@@ -27,3 +27,5 @@ Apresntação_GDB.pdf e README.md além de pesquisa sobre códigos NASM para aux
 200043722 - Thais Fernanda de Castro Garcia: Ajuda na pesquisa e elaboração da apresentação do debug GDB, auxilío no desenvolvimento do switch
 
 180076272 - Jonas de Souza Fagundes: Slides, pesquisa sobre GDB e NASM, auxilio de desenvolvimento e apresentação do switch.asm
+
+160125260 - Ingrid Lorraine Rodrigues da Silva: Slides, pesquisa sobre GDB e NASM, auxilio de desenvolvimento e na apresentação do debug GDB e do switch.asm
