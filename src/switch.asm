@@ -1,7 +1,7 @@
 V1    EQU 1                         ;constante 1
 V2    EQU 2                         ;constante 2
 V3    EQU 3                         ;constante 3
-V4    EQU 4                         ;constante 3
+V4    EQU 4                         ;constante 4
 
 %macro SWITCH 1                     ;switch com 1 argumento
     mov rax, %1                     ;valor a ser comparado em rax
@@ -46,18 +46,18 @@ section   .text
 _start:
     mov rdx, 1                      ;valor inicial a ser somado
 
-    SWITCH 3                        ;switch 2
+    SWITCH 200                        ;switch 3
     CASE V1                         ;case 1
-        add rdx, V1                 ;soma V1 a 3
+        add rdx, V1                 ;soma V1 a 1
         BREAK                        
     CASE V2                         ;case 2
-        add rdx, V2                 ;soma V2 a 3
+        add rdx, V2                 ;soma V2 a 1
         BREAK        
     CASE V3                         ;case 3
-        add rdx, V3                 ;soma V3 a 3
+        add rdx, V3                 ;soma V3 a 1
         BREAK
     DEFAULT
-        add rdx, V4                 ;soma V4 a 
+        add rdx, V4                 ;soma V4 a 1
     ENDSWITCH
 
     mov rax, rdx                      
