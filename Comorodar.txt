@@ -1,28 +1,15 @@
-como mostrar GDB:
+como mostrar exemplo.asm no GDB:
 nasm -g -f elf64 exemplo.asm
 ld -o switch exemplo.o
 gdb ./exemplo --tui
 
-NO GDB:
-c
-layout asm
-layout regs
-b _start
-run
-stepi
-
-
 como rodar switch:
 nasm -g -f elf64 switch.asm
 ld -o switch switch.o
+./switch 
+
+como mostrar switch.asm no GDB:
 gdb ./switch --tui
 
-no GDB:
-layout asm
-layout regs
-b _start (seta breakpoint)
-run
-stepi (passa pra próxima linha)
-s (vai até o final)
 
 

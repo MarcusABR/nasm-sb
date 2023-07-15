@@ -29,11 +29,19 @@ Para baixar o GDB em distribuições Debian/Ubuntu:
 ```
 sudo apt-get install gdb
 ```
+## Compilando os arquivos exemplo.asm ou switch.asm
+Tendo em vista que os códigos somente foram testados no linux, utilize os seguintes comandos:
+```
+nasm -g -f elf64 -o src/nome_do_arquivo.o src/nome_do_arquivo.asm
+ld nome_do_arquivo.o -o nome_do_arquivo
+./nome_do_arquivo
+```
+
 ## Debug utilizando o GDB
 
 Criando um executável do programa:
 ```
-nasm -f elf64 -o exemplo.o exemplo.asm
+nasm -g -f elf64 -o exemplo.o exemplo.asm
 ld exemplo.o -o exemplo
 ```
 Após compilar o programa em Assembly, rode o GDB:
